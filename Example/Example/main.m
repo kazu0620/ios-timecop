@@ -1,9 +1,9 @@
 //
 //  main.m
-//  Timecop
+//  Example
 //
-//  Created by Kazuhiro Sakamoto on 2015/04/19.
-//  Copyright (c) 2015年 Soragoto. All rights reserved.
+//  Created by sakamoto kazuhiro on 2015/04/24.
+//  Copyright (c) 2015年 sakamoto kazuhiro. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

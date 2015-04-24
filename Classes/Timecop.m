@@ -11,7 +11,18 @@
 
 @implementation Timecop
 
+static BOOL isSafeMode;
+
++ (BOOL) safeMode {
+    return isSafeMode;
+}
+
++ (void) setSafeMode:(BOOL)safeMode {
+    isSafeMode = safeMode;
+}
+
 + (void) travelWithDate:(NSDate *)date {
+    [self throwExectionIfSafeMode];
     [NSDate travelWithDate:date];
 }
 
@@ -22,6 +33,7 @@
 }
 
 + (void) freezeWithDate:(NSDate *)date {
+    [self throwExectionIfSafeMode];
     [NSDate freezeWithDate:date];
 }
 
@@ -32,11 +44,24 @@
 }
 
 + (void) scaleWithRatio:(float)ratio {
+    [self throwExectionIfSafeMode];
     [NSDate scaleWithRatio:ratio];
 }
 
-+ (void) return {
++ (void) scaleWithRatio:(float)ratio  block:(void(^)())block {
+    [NSDate scaleWithRatio:ratio];
+    block();
     [NSDate finishTravel];
+}
+
++ (void) finishTravel {
+    [NSDate finishTravel];
+}
+
++ (void) throwExectionIfSafeMode {
+    if (isSafeMode) {
+        @throw @"Safe mode is enabled, only calls passing a block are allowed.";
+    }
 }
 
 @end

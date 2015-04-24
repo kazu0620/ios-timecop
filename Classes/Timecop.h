@@ -12,6 +12,9 @@
 
 @property (nonatomic) BOOL safeMode;
 
++ (BOOL) safeMode;
++ (void) setSafeMode:(BOOL)safeMode;
+
 + (void) travelWithDate:(NSDate *)date;
 + (void) travelWithDate:(NSDate *)date block:(void(^)())block;
 
@@ -19,7 +22,8 @@
 + (void) freezeWithDate:(NSDate *)date block:(void(^)())block;
 
 + (void) scaleWithRatio:(float)ratio;
++ (void) scaleWithRatio:(float)ratio  block:(void(^)())block;
 
-+ (void) return;
++ (void) finishTravel;
 
 @end
