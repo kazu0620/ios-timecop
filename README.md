@@ -11,7 +11,7 @@ A library providing "time travel" and "time freezing" capabilities, making it de
 Install Timecop to your project with [CocoaPods](http://cocoapods.org) by adding the following to your Podfile:
 
 ``` ruby
-pod 'Timecop', "0.0.6"
+pod 'Timecop', "0.0.61"
 ```
 ## FEATURES
 - Freeze time to a specific point.
