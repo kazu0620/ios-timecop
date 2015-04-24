@@ -33,7 +33,7 @@ NSDate *aMonthLater = [NSDate dateWithTimeIntervalSinceNow:60*60*24*30];
 }];  
 ```
 
-### The difference between Timecop.freeze and Timecop.travel
+### The difference between [Timecop freezeWithDate:] and [Timecop travelWithDate:]
 
 freeze is used to statically mock the concept of now. As your program executes,
 Time.now will not change unless you make subsequent calls into the Timecop API.
@@ -58,7 +58,7 @@ if( aHourAgo != [NSDate date] ){
 }
 ```
 
-### Timecop.scale
+### [Timecop scaleWithFactor:]
 
 Let's say you want to test a "live" integration wherein entire days could pass by
 in minutes while you're able to simulate "real" activity. For example, one such use case
@@ -75,7 +75,7 @@ sleep(1);
 // seconds later, hours have past it's gone a hour!
 NSLog(@"a hour passed! :%@", [NSDate date]);
 ```
-### Timecop.safe_mode
+### [Timecop safeMode]
 
 Safe mode forces you to use Timecop with the block syntax since it always puts time back the way it was. If you are running in safe mode and use Timecop without the block exceptions will be raised to tell the user they are not being safe.
 
