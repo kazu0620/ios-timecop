@@ -1,4 +1,4 @@
-# timecop
+# ios-timecop
 [![Version](https://img.shields.io/cocoapods/v/Timecop.svg?style=flat)](https://github.com/kazu0620/ios-timecop)
 [![License](https://img.shields.io/cocoapods/l/Timecop.svg?style=flat)](https://github.com/kazu0620/ios-timecop)
 [![Platform](https://img.shields.io/cocoapods/p/Timecop.svg?style=flat)](https://github.com/kazu0620/ios-timecop)
