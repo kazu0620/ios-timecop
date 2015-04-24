@@ -56,3 +56,34 @@ sleep(10)
 if( aHourAgo != [NSDate date] ){
     NSLog(@"TIME PASSED!");
 }
+```
+
+### Timecop.scale
+
+Let's say you want to test a "live" integration wherein entire days could pass by
+in minutes while you're able to simulate "real" activity. For example, one such use case
+is being able to test reports and invoices that run in 30 day cycles in very little time, while also
+being able to simulate activity via subsequent calls to your application.
+
+```objective-c
+# seconds will now seem like hours
+[Timecop scaleWithFactor:3600];
+NSLog(@"current date :%@", [NSDate date]);
+
+// sleep 1sec
+sleep(1);
+// seconds later, hours have past it's gone a hour!
+NSLog(@"a hour passed! :%@", [NSDate date]);
+```
+### Timecop.safe_mode
+
+Safe mode forces you to use Timecop with the block syntax since it always puts time back the way it was. If you are running in safe mode and use Timecop without the block exceptions will be raised to tell the user they are not being safe.
+
+``` ruby
+// turn on safe mode
+[Timecop setSafeMode:YES];
+
+// using method without block
+[Timecop freezeWithDate:nil];
+// *** Terminating app due to uncaught exception 'Timecop Exception', reason: 'Safe mode is enabled, only calls passing a block are allowed.'
+```
