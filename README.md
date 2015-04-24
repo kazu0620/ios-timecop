@@ -32,3 +32,27 @@ NSDate *aMonthLater = [NSDate dateWithTimeIntervalSinceNow:60*60*24*30];
     XCTAssertTrue( [joe mortgageDue] );
 }];  
 ```
+
+### The difference between Timecop.freeze and Timecop.travel
+
+freeze is used to statically mock the concept of now. As your program executes,
+Time.now will not change unless you make subsequent calls into the Timecop API.
+travel, on the other hand, computes an offset between what we currently think
+Time.now is (recall that we support nested traveling) and the time passed in.
+It uses this offset to simulate the passage of time.  To demonstrate, consider
+the following code snippets:
+
+```objective-c
+NSDate *aHourAgo = [NSDate dateWithTimeIntervalSinceNow:60*60*-1];
+[Timecop freezeWithDate:aHourAgo];
+sleep(10)
+if( aHourAgo == [NSDate date] ){
+    NSLog(@"TIME NOT PASSED");
+}
+
+[Timecop finishTravel]; // "turn off" Timecop
+[Timecop travelWithDate:aHourAgo];
+sleep(10)
+if( aHourAgo != [NSDate date] ){
+    NSLog(@"TIME PASSED!");
+}
