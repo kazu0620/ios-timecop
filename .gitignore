@@ -1,9 +1,7 @@
 *DS_Store*
-*xcworkspace/xcuserdata/*
-*xcodeproj/xcuserdata/*
-*.xcodeproj/project.xcworkspace/xcshareddata/
-*.xcodeproj/project.xcworkspace/xcuserdata/
-*.xcworkspace/xcshareddata
+Example/Example.xcodeproj/project.xcworkspace/xcuserdata/
+Example/Example.xcodeproj/project.xcworkspace/xcshareddata/
+Example/Example.xcodeproj/xcuserdata/
 Pods/*
 Podfile.lock
 *save
