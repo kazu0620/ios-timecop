@@ -60,7 +60,7 @@ static BOOL isSafeMode;
 
 + (void) throwExectionIfSafeMode {
     if (isSafeMode) {
-        @throw @"Safe mode is enabled, only calls passing a block are allowed.";
+        [NSException raise:@"Timecop Exception" format:@"Safe mode is enabled, only calls passing a block are allowed."];
     }
 }
 
