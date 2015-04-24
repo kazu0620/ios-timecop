@@ -23,39 +23,39 @@ static BOOL isSafeMode;
 
 + (void) travelWithDate:(NSDate *)date {
     [self throwExectionIfSafeMode];
-    [NSDate travelWithDate:date];
+    [NSDate srg_travelWithDate:date];
 }
 
 + (void) travelWithDate:(NSDate *)date block:(void(^)())block {
-    [NSDate travelWithDate:date];
+    [NSDate srg_travelWithDate:date];
     block();
-    [NSDate finishTravel];
+    [NSDate srg_finishTravel];
 }
 
 + (void) freezeWithDate:(NSDate *)date {
     [self throwExectionIfSafeMode];
-    [NSDate freezeWithDate:date];
+    [NSDate srg_freezeWithDate:date];
 }
 
 + (void) freezeWithDate:(NSDate *)date block:(void(^)())block {
-    [NSDate freezeWithDate:date];
+    [NSDate srg_freezeWithDate:date];
     block();
-    [NSDate finishTravel];
+    [NSDate srg_finishTravel];
 }
 
 + (void) scaleWithRatio:(float)ratio {
     [self throwExectionIfSafeMode];
-    [NSDate scaleWithRatio:ratio];
+    [NSDate srg_scaleWithRatio:ratio];
 }
 
 + (void) scaleWithRatio:(float)ratio  block:(void(^)())block {
-    [NSDate scaleWithRatio:ratio];
+    [NSDate srg_scaleWithRatio:ratio];
     block();
-    [NSDate finishTravel];
+    [NSDate srg_finishTravel];
 }
 
 + (void) finishTravel {
-    [NSDate finishTravel];
+    [NSDate srg_finishTravel];
 }
 
 + (void) throwExectionIfSafeMode {

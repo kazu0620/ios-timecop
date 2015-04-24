@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDate(Timecop)
+@interface NSDate(SRGTimecop)
 
-+ (void) travelWithDate:(NSDate *)date;
-+ (void) freezeWithDate:(NSDate *)date;
-+ (void) scaleWithRatio:(float)ratio;
-+ (void) finishTravel;
++ (void) srg_travelWithDate:(NSDate *)date;
++ (void) srg_freezeWithDate:(NSDate *)date;
++ (void) srg_scaleWithRatio:(float)ratio;
++ (void) srg_finishTravel;
 
 @end

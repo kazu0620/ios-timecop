@@ -14,36 +14,36 @@ static NSTimeInterval scaledTimeOriginTime;
 static NSDate *freezedDate;
 static double scaleRatio;
 
-@implementation NSDate(Timecop)
+@implementation NSDate(SRGTimecop)
 
 + (void) load {
     scaleRatio = 1;
     [NSDate injectTimecop];
 }
 
-+ (void) travelWithDate:(NSDate *)date {
++ (void) srg_travelWithDate:(NSDate *)date {
     diffFromRealTime     = [date timeIntervalSince1970] - [[NSDate date] timeIntervalSince1970];
     if( freezedDate ){
         freezedDate = [NSDate dateWithTimeInterval:diffFromRealTime sinceDate:freezedDate];
     }
 }
 
-+ (void) freezeWithDate:(NSDate *)date {
++ (void) srg_freezeWithDate:(NSDate *)date {
     freezedDate = date;
 }
 
-+ (void) scaleWithRatio:(float)ratio {
++ (void) srg_scaleWithRatio:(float)ratio {
     scaledTimeOriginTime = [[NSDate date] timeIntervalSince1970];
     scaleRatio           = ratio;
 }
 
-+ (void) finishTravel {
++ (void) srg_finishTravel {
     diffFromRealTime = 0;
     scaleRatio       = 1;
     freezedDate      = nil;
 }
 
-+ (instancetype) travelingDate {
++ (instancetype) srg_travelingDate {
     if( freezedDate ) {
         return freezedDate;
     }
@@ -63,13 +63,13 @@ static double scaleRatio;
     return [NSDate dateWithTimeIntervalSince1970:[self realUnixTime] + diffFromRealTime];
 }
 
-+ (instancetype) traveringDateWithTimeIntervalSinceNow:(NSTimeInterval)secs {
++ (instancetype) srg_traveringDateWithTimeIntervalSinceNow:(NSTimeInterval)secs {
     return [NSDate dateWithTimeIntervalSince1970:[[NSDate date] timeIntervalSince1970] + secs];
 }
 
 + (void) injectTimecop {
-    [self switchInstanceMethodFrom:@selector(date) To:@selector(travelingDate)];
-    [self switchInstanceMethodFrom:@selector(dateWithTimeIntervalSinceNow:) To:@selector(traveringDateWithTimeIntervalSinceNow:)];
+    [self switchInstanceMethodFrom:@selector(date) To:@selector(srg_travelingDate)];
+    [self switchInstanceMethodFrom:@selector(dateWithTimeIntervalSinceNow:) To:@selector(srg_traveringDateWithTimeIntervalSinceNow:)];
 }
 
 +(void)switchInstanceMethodFrom:(SEL)from To:(SEL)to
