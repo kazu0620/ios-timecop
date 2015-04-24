@@ -12,12 +12,12 @@
 static NSTimeInterval diffFromRealTime;
 static NSTimeInterval scaledTimeOriginTime;
 static NSDate *freezedDate;
-static double scaleRatio;
+static double scaleFactor;
 
 @implementation NSDate(SRGTimecop)
 
 + (void) load {
-    scaleRatio = 1;
+    scaleFactor = 1;
     [NSDate injectTimecop];
 }
 
@@ -32,14 +32,14 @@ static double scaleRatio;
     freezedDate = date;
 }
 
-+ (void) srg_scaleWithRatio:(float)ratio {
++ (void) srg_scaleWithFactor:(float)ratio {
     scaledTimeOriginTime = [[NSDate date] timeIntervalSince1970];
-    scaleRatio           = ratio;
+    scaleFactor           = ratio;
 }
 
 + (void) srg_finishTravel {
     diffFromRealTime = 0;
-    scaleRatio       = 1;
+    scaleFactor      = 1;
     freezedDate      = nil;
 }
 
@@ -48,10 +48,10 @@ static double scaleRatio;
         return freezedDate;
     }
     
-    if( scaleRatio != 1 ) {
+    if( scaleFactor != 1 ) {
         NSTimeInterval now        = [self realUnixTime];
         NSTimeInterval scaledDiff = now - scaledTimeOriginTime;
-        NSTimeInterval adjusted   = scaledDiff * scaleRatio;
+        NSTimeInterval adjusted   = scaledDiff * scaleFactor;
         
         if( scaledDiff > adjusted ){
             adjusted = (scaledDiff-adjusted) * -1;

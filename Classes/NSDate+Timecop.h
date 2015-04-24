@@ -12,7 +12,7 @@
 
 + (void) srg_travelWithDate:(NSDate *)date;
 + (void) srg_freezeWithDate:(NSDate *)date;
-+ (void) srg_scaleWithRatio:(float)ratio;
++ (void) srg_scaleWithFactor:(float)ratio;
 + (void) srg_finishTravel;
 
 @end

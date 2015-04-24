@@ -43,13 +43,13 @@ static BOOL isSafeMode;
     [NSDate srg_finishTravel];
 }
 
-+ (void) scaleWithRatio:(float)ratio {
++ (void) scaleWithFactor:(float)ratio {
     [self throwExectionIfSafeMode];
-    [NSDate srg_scaleWithRatio:ratio];
+    [NSDate srg_scaleWithFactor:ratio];
 }
 
-+ (void) scaleWithRatio:(float)ratio  block:(void(^)())block {
-    [NSDate srg_scaleWithRatio:ratio];
++ (void) scaleWithFactor:(float)ratio  block:(void(^)())block {
+    [NSDate srg_scaleWithFactor:ratio];
     block();
     [NSDate srg_finishTravel];
 }

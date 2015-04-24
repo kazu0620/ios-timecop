@@ -34,7 +34,7 @@
     NSDate *aHourAgo = [NSDate dateWithTimeIntervalSinceNow:60*60*-1];
     [Timecop travelWithDate:aHourAgo];
     NSLog(@"Travel to a hour ago  :%@", [NSDate date]);
-   
+    
     // return to real time
     [Timecop finishTravel];
     NSLog(@"Return to real time :%@", [NSDate date]);
@@ -76,7 +76,7 @@
 - (void) scaleExample {
     NSLog(@"The time before scale :%@", [NSDate date]);
     
-    [Timecop scaleWithRatio:3600];
+    [Timecop scaleWithFactor:3600];
     
     // Sleep 1sec
     sleep(1);
@@ -88,7 +88,7 @@
     [Timecop finishTravel];
     
     // with blocks
-    [Timecop scaleWithRatio:3600 block:^{
+    [Timecop scaleWithFactor:3600 block:^{
         // The time scaled in this blocks scope
     }];
 }

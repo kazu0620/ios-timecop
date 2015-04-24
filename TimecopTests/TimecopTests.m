@@ -85,11 +85,11 @@
     [Timecop setSafeMode:YES];
     XCTAssertThrows([Timecop travelWithDate:nil]);
     XCTAssertThrows([Timecop freezeWithDate:nil]);
-    XCTAssertThrows([Timecop scaleWithRatio:1]);
+    XCTAssertThrows([Timecop scaleWithFactor:1]);
     
     [Timecop travelWithDate:nil block:^(){}];
     [Timecop freezeWithDate:nil block:^(){}];
-    [Timecop scaleWithRatio:1 block:^(){}];
+    [Timecop scaleWithFactor:1 block:^(){}];
 }
 
 @end

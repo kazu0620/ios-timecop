@@ -21,8 +21,8 @@
 + (void) freezeWithDate:(NSDate *)date;
 + (void) freezeWithDate:(NSDate *)date block:(void(^)())block;
 
-+ (void) scaleWithRatio:(float)ratio;
-+ (void) scaleWithRatio:(float)ratio  block:(void(^)())block;
++ (void) scaleWithFactor:(float)ratio;
++ (void) scaleWithFactor:(float)ratio  block:(void(^)())block;
 
 + (void) finishTravel;
 
