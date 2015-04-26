@@ -13,6 +13,7 @@ static NSTimeInterval diffFromRealTime;
 static NSTimeInterval scaledTimeOriginTime;
 static NSDate *freezedDate;
 static double scaleFactor;
+static BOOL injected;
 
 @implementation NSDate(SRGTimecop)
 
@@ -22,7 +23,7 @@ static double scaleFactor;
 }
 
 + (void) srg_travelWithDate:(NSDate *)date {
-    diffFromRealTime     = [date timeIntervalSince1970] - [[NSDate date] timeIntervalSince1970];
+    diffFromRealTime     = [date timeIntervalSince1970] - [self realUnixTime];
     if( freezedDate ){
         freezedDate = [NSDate dateWithTimeInterval:diffFromRealTime sinceDate:freezedDate];
     }
@@ -68,8 +69,10 @@ static double scaleFactor;
 }
 
 + (void) injectTimecop {
+    if( injected ){ return; }
     [self switchInstanceMethodFrom:@selector(date) To:@selector(srg_travelingDate)];
     [self switchInstanceMethodFrom:@selector(dateWithTimeIntervalSinceNow:) To:@selector(srg_traveringDateWithTimeIntervalSinceNow:)];
+    injected = YES;
 }
 
 +(void)switchInstanceMethodFrom:(SEL)from To:(SEL)to
