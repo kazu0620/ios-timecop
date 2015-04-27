@@ -68,7 +68,7 @@ is being able to test reports and invoices that run in 30 day cycles in very lit
 being able to simulate activity via subsequent calls to your application.
 
 ```objective-c
-# seconds will now seem like hours
+// seconds will now seem like hours
 [Timecop scaleWithFactor:3600];
 NSLog(@"current date :%@", [NSDate date]);
 
