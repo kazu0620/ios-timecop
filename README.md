@@ -6,6 +6,8 @@
 
 A library providing "time travel" and "time freezing" capabilities, making it dead simple to test time-dependent code.  It inspired by [ruby timecop gem](https://github.com/travisjeffery/timecop).
 
+[Copyright (c) 2012 — Travis Jeffery, John Trupiano](https://github.com/travisjeffery/timecop/blob/master/LICENSE)
+
 ## INSTALL
 
 Install Timecop to your project with [CocoaPods](http://cocoapods.org) by adding the following to your Podfile:
