@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A2ADF6A1C7CFD970098E46B"
-               BuildableName = "Timecop.framework"
-               BlueprintName = "timecop-ios"
+               BlueprintIdentifier = "0A2ADF8F1C7D039F0098E46B"
+               BuildableName = "timecop-osx.framework"
+               BlueprintName = "timecop-osx"
                ReferencedContainer = "container:timecop.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,9 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A2ADF741C7CFD970098E46B"
-               BuildableName = "timecop-iosTests.xctest"
-               BlueprintName = "timecop-iosTests"
+               BlueprintIdentifier = "0A2ADF981C7D039F0098E46B"
+               BuildableName = "timecop-osxTests.xctest"
+               BlueprintName = "timecop-osxTests"
                ReferencedContainer = "container:timecop.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,9 +43,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A2ADF6A1C7CFD970098E46B"
-            BuildableName = "Timecop.framework"
-            BlueprintName = "timecop-ios"
+            BlueprintIdentifier = "0A2ADF8F1C7D039F0098E46B"
+            BuildableName = "timecop-osx.framework"
+            BlueprintName = "timecop-osx"
             ReferencedContainer = "container:timecop.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +65,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A2ADF6A1C7CFD970098E46B"
-            BuildableName = "Timecop.framework"
-            BlueprintName = "timecop-ios"
+            BlueprintIdentifier = "0A2ADF8F1C7D039F0098E46B"
+            BuildableName = "timecop-osx.framework"
+            BlueprintName = "timecop-osx"
             ReferencedContainer = "container:timecop.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -83,9 +83,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A2ADF6A1C7CFD970098E46B"
-            BuildableName = "Timecop.framework"
-            BlueprintName = "timecop-ios"
+            BlueprintIdentifier = "0A2ADF8F1C7D039F0098E46B"
+            BuildableName = "timecop-osx.framework"
+            BlueprintName = "timecop-osx"
             ReferencedContainer = "container:timecop.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
