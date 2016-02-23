@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 Soragoto. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @interface NSDate(SRGTimecop)
 

@@ -6,7 +6,10 @@
 //  Copyright (c) 2015年 Soragoto. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+
+FOUNDATION_EXPORT double TimecopVersionNumber;
+FOUNDATION_EXPORT const unsigned char TimecopVersionString[];
 
 @interface Timecop : NSObject
 
