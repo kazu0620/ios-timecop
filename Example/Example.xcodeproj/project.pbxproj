@@ -7,36 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2ADFB81C7D0FD10098E46B /* Timecop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2ADFB71C7D0FD10098E46B /* Timecop.framework */; };
 		A0892F951AEA6AEB0014BD3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0892F941AEA6AEB0014BD3F /* main.m */; };
 		A0892F981AEA6AEB0014BD3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0892F971AEA6AEB0014BD3F /* AppDelegate.m */; };
-		A0892FBC1AEA6B080014BD3F /* NSDate+Timecop.m in Sources */ = {isa = PBXBuildFile; fileRef = A0892FB91AEA6B080014BD3F /* NSDate+Timecop.m */; };
-		A0892FBD1AEA6B080014BD3F /* Timecop.m in Sources */ = {isa = PBXBuildFile; fileRef = A0892FBB1AEA6B080014BD3F /* Timecop.m */; };
-		A0892FBF1AEA6B340014BD3F /* TimecopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0892FBE1AEA6B340014BD3F /* TimecopTests.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A0892FA91AEA6AEB0014BD3F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0892F871AEA6AEB0014BD3F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0892F8E1AEA6AEB0014BD3F;
-			remoteInfo = Example;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		0A2ADFB71C7D0FD10098E46B /* Timecop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Timecop.framework; path = "../../../Library/Developer/Xcode/DerivedData/timecop-dzpdxdwtiwxcweehvsmccehmubhn/Build/Products/Debug/Timecop.framework"; sourceTree = "<group>"; };
 		A0892F8F1AEA6AEB0014BD3F /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0892F931AEA6AEB0014BD3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0892F941AEA6AEB0014BD3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A0892F961AEA6AEB0014BD3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0892F971AEA6AEB0014BD3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A0892FA81AEA6AEB0014BD3F /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0892FAD1AEA6AEB0014BD3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0892FB81AEA6B080014BD3F /* NSDate+Timecop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Timecop.h"; path = "../../Classes/NSDate+Timecop.h"; sourceTree = "<group>"; };
-		A0892FB91AEA6B080014BD3F /* NSDate+Timecop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Timecop.m"; path = "../../Classes/NSDate+Timecop.m"; sourceTree = "<group>"; };
-		A0892FBA1AEA6B080014BD3F /* Timecop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timecop.h; path = ../../Classes/Timecop.h; sourceTree = "<group>"; };
-		A0892FBB1AEA6B080014BD3F /* Timecop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Timecop.m; path = ../../Classes/Timecop.m; sourceTree = "<group>"; };
-		A0892FBE1AEA6B340014BD3F /* TimecopTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimecopTests.m; path = ../../TimecopTests/TimecopTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,13 +26,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0892FA51AEA6AEB0014BD3F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0A2ADFB81C7D0FD10098E46B /* Timecop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,8 +36,8 @@
 		A0892F861AEA6AEB0014BD3F = {
 			isa = PBXGroup;
 			children = (
+				0A2ADFB71C7D0FD10098E46B /* Timecop.framework */,
 				A0892F911AEA6AEB0014BD3F /* Example */,
-				A0892FAB1AEA6AEB0014BD3F /* ExampleTests */,
 				A0892F901AEA6AEB0014BD3F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,7 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				A0892F8F1AEA6AEB0014BD3F /* Example.app */,
-				A0892FA81AEA6AEB0014BD3F /* ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,7 +53,6 @@
 		A0892F911AEA6AEB0014BD3F /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				A0892FC01AEA6B6E0014BD3F /* Timecop */,
 				A0892F961AEA6AEB0014BD3F /* AppDelegate.h */,
 				A0892F971AEA6AEB0014BD3F /* AppDelegate.m */,
 				A0892F921AEA6AEB0014BD3F /* Supporting Files */,
@@ -93,34 +67,6 @@
 				A0892F941AEA6AEB0014BD3F /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A0892FAB1AEA6AEB0014BD3F /* ExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				A0892FBE1AEA6B340014BD3F /* TimecopTests.m */,
-				A0892FAC1AEA6AEB0014BD3F /* Supporting Files */,
-			);
-			path = ExampleTests;
-			sourceTree = "<group>";
-		};
-		A0892FAC1AEA6AEB0014BD3F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A0892FAD1AEA6AEB0014BD3F /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A0892FC01AEA6B6E0014BD3F /* Timecop */ = {
-			isa = PBXGroup;
-			children = (
-				A0892FB81AEA6B080014BD3F /* NSDate+Timecop.h */,
-				A0892FB91AEA6B080014BD3F /* NSDate+Timecop.m */,
-				A0892FBA1AEA6B080014BD3F /* Timecop.h */,
-				A0892FBB1AEA6B080014BD3F /* Timecop.m */,
-			);
-			name = Timecop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,39 +89,17 @@
 			productReference = A0892F8F1AEA6AEB0014BD3F /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A0892FA71AEA6AEB0014BD3F /* ExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A0892FB51AEA6AEB0014BD3F /* Build configuration list for PBXNativeTarget "ExampleTests" */;
-			buildPhases = (
-				A0892FA41AEA6AEB0014BD3F /* Sources */,
-				A0892FA51AEA6AEB0014BD3F /* Frameworks */,
-				A0892FA61AEA6AEB0014BD3F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A0892FAA1AEA6AEB0014BD3F /* PBXTargetDependency */,
-			);
-			name = ExampleTests;
-			productName = ExampleTests;
-			productReference = A0892FA81AEA6AEB0014BD3F /* ExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A0892F871AEA6AEB0014BD3F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "sakamoto kazuhiro";
 				TargetAttributes = {
 					A0892F8E1AEA6AEB0014BD3F = {
 						CreatedOnToolsVersion = 6.3;
-					};
-					A0892FA71AEA6AEB0014BD3F = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = A0892F8E1AEA6AEB0014BD3F;
 					};
 				};
 			};
@@ -193,20 +117,12 @@
 			projectRoot = "";
 			targets = (
 				A0892F8E1AEA6AEB0014BD3F /* Example */,
-				A0892FA71AEA6AEB0014BD3F /* ExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A0892F8D1AEA6AEB0014BD3F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0892FA61AEA6AEB0014BD3F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -221,29 +137,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0892F981AEA6AEB0014BD3F /* AppDelegate.m in Sources */,
-				A0892FBC1AEA6B080014BD3F /* NSDate+Timecop.m in Sources */,
 				A0892F951AEA6AEB0014BD3F /* main.m in Sources */,
-				A0892FBD1AEA6B080014BD3F /* Timecop.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0892FA41AEA6AEB0014BD3F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A0892FBF1AEA6B340014BD3F /* TimecopTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A0892FAA1AEA6AEB0014BD3F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A0892F8E1AEA6AEB0014BD3F /* Example */;
-			targetProxy = A0892FA91AEA6AEB0014BD3F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A0892FB01AEA6AEB0014BD3F /* Debug */ = {
@@ -267,6 +165,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -334,6 +233,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.soragoto.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -344,41 +244,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.soragoto.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		A0892FB61AEA6AEB0014BD3F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
-			};
-			name = Debug;
-		};
-		A0892FB71AEA6AEB0014BD3F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 			};
 			name = Release;
 		};
@@ -401,14 +268,7 @@
 				A0892FB41AEA6AEB0014BD3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		A0892FB51AEA6AEB0014BD3F /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A0892FB61AEA6AEB0014BD3F /* Debug */,
-				A0892FB71AEA6AEB0014BD3F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
