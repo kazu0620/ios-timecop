@@ -13,7 +13,7 @@
 		0A2ADF861C7CFF980098E46B /* NSDate+Timecop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ADF5C1C7CF4EB0098E46B /* NSDate+Timecop.m */; };
 		0A2ADF871C7CFF980098E46B /* Timecop.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A2ADF5D1C7CF4EB0098E46B /* Timecop.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A2ADF881C7CFF980098E46B /* Timecop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ADF5E1C7CF4EB0098E46B /* Timecop.m */; };
-		0A2ADF9A1C7D039F0098E46B /* timecop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2ADF901C7D039F0098E46B /* timecop.framework */; };
+		0A2ADF9A1C7D039F0098E46B /* Timecop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2ADF901C7D039F0098E46B /* Timecop.framework */; };
 		0A2ADFA71C7D03E20098E46B /* Timecop.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A2ADF5D1C7CF4EB0098E46B /* Timecop.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A2ADFA81C7D03F10098E46B /* Timecop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ADF5E1C7CF4EB0098E46B /* Timecop.m */; };
 		0A2ADFA91C7D03F50098E46B /* NSDate+Timecop.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A2ADF5B1C7CF4EB0098E46B /* NSDate+Timecop.h */; };
@@ -49,10 +49,10 @@
 		0A2ADF641C7CF51A0098E46B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0A2ADF651C7CF51A0098E46B /* Timecop.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Timecop.podspec; sourceTree = "<group>"; };
 		0A2ADF6B1C7CFD970098E46B /* Timecop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Timecop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A2ADF751C7CFD970098E46B /* timecop-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "timecop-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2ADF751C7CFD970098E46B /* Timecop-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Timecop-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A2ADF831C7CFE9D0098E46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A2ADF901C7D039F0098E46B /* timecop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = timecop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A2ADF991C7D039F0098E46B /* timecop-osxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "timecop-osxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2ADF901C7D039F0098E46B /* Timecop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Timecop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2ADF991C7D039F0098E46B /* Timecop-osxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Timecop-osxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A2ADF9A1C7D039F0098E46B /* timecop.framework in Frameworks */,
+				0A2ADF9A1C7D039F0098E46B /* Timecop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,9 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				0A2ADF6B1C7CFD970098E46B /* Timecop.framework */,
-				0A2ADF751C7CFD970098E46B /* timecop-iosTests.xctest */,
-				0A2ADF901C7D039F0098E46B /* timecop.framework */,
-				0A2ADF991C7D039F0098E46B /* timecop-osxTests.xctest */,
+				0A2ADF751C7CFD970098E46B /* Timecop-iosTests.xctest */,
+				0A2ADF901C7D039F0098E46B /* Timecop.framework */,
+				0A2ADF991C7D039F0098E46B /* Timecop-osxTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,7 +198,7 @@
 			);
 			name = "timecop-iosTests";
 			productName = "ios-timecop-iosTests";
-			productReference = 0A2ADF751C7CFD970098E46B /* timecop-iosTests.xctest */;
+			productReference = 0A2ADF751C7CFD970098E46B /* Timecop-iosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		0A2ADF8F1C7D039F0098E46B /* timecop-osx */ = {
@@ -216,7 +216,7 @@
 			);
 			name = "timecop-osx";
 			productName = "timecop-osx";
-			productReference = 0A2ADF901C7D039F0098E46B /* timecop.framework */;
+			productReference = 0A2ADF901C7D039F0098E46B /* Timecop.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		0A2ADF981C7D039F0098E46B /* timecop-osxTests */ = {
@@ -234,7 +234,7 @@
 			);
 			name = "timecop-osxTests";
 			productName = "timecop-osxTests";
-			productReference = 0A2ADF991C7D039F0098E46B /* timecop-osxTests.xctest */;
+			productReference = 0A2ADF991C7D039F0098E46B /* Timecop-osxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -259,7 +259,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0ABE177E1C7CF48400BB33AC /* Build configuration list for PBXProject "timecop" */;
+			buildConfigurationList = 0ABE177E1C7CF48400BB33AC /* Build configuration list for PBXProject "Timecop" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -513,7 +513,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.soraogoto.ios-timecop-iosTests";
-				PRODUCT_NAME = "timecop-iosTests";
+				PRODUCT_NAME = "Timecop-iosTests";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -553,7 +553,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.soraogoto.ios-timecop-iosTests";
-				PRODUCT_NAME = "timecop-iosTests";
+				PRODUCT_NAME = "Timecop-iosTests";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -610,7 +610,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.soraogoto.timecop-osx";
-				PRODUCT_NAME = timecop;
+				PRODUCT_NAME = Timecop;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -662,7 +662,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.soraogoto.timecop-osx";
-				PRODUCT_NAME = timecop;
+				PRODUCT_NAME = Timecop;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -713,7 +713,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.soraogoto.timecop-osxTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Timecop-osxTests";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -754,7 +754,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.soraogoto.timecop-osxTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Timecop-osxTests";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -785,6 +785,7 @@
 				0A2ADF7F1C7CFD970098E46B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A2ADF801C7CFD970098E46B /* Build configuration list for PBXNativeTarget "timecop-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -793,6 +794,7 @@
 				0A2ADF821C7CFD970098E46B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A2ADFA11C7D039F0098E46B /* Build configuration list for PBXNativeTarget "timecop-osx" */ = {
 			isa = XCConfigurationList;
@@ -801,6 +803,7 @@
 				0A2ADFA31C7D039F0098E46B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A2ADFA41C7D039F0098E46B /* Build configuration list for PBXNativeTarget "timecop-osxTests" */ = {
 			isa = XCConfigurationList;
@@ -809,8 +812,9 @@
 				0A2ADFA61C7D039F0098E46B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		0ABE177E1C7CF48400BB33AC /* Build configuration list for PBXProject "timecop" */ = {
+		0ABE177E1C7CF48400BB33AC /* Build configuration list for PBXProject "Timecop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0ABE177F1C7CF48400BB33AC /* Debug */,
