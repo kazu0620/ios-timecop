@@ -11,22 +11,24 @@
 FOUNDATION_EXPORT double TimecopVersionNumber;
 FOUNDATION_EXPORT const unsigned char TimecopVersionString[];
 
+typedef void (^TimecopBlock)();
+
 @interface Timecop : NSObject
 
 @property (nonatomic) BOOL safeMode;
 
-+ (BOOL) safeMode;
-+ (void) setSafeMode:(BOOL)safeMode;
++ (BOOL)safeMode;
++ (void)setSafeMode:(BOOL)safeMode;
 
-+ (void) travelWithDate:(NSDate *)date;
-+ (void) travelWithDate:(NSDate *)date block:(void(^)())block;
++ (void)travelWithDate:(NSDate *)date;
++ (void)travelWithDate:(NSDate *)date block:(TimecopBlock)block;
 
-+ (void) freezeWithDate:(NSDate *)date;
-+ (void) freezeWithDate:(NSDate *)date block:(void(^)())block;
++ (void)freezeWithDate:(NSDate *)date;
++ (void)freezeWithDate:(NSDate *)date block:(TimecopBlock)block;
 
-+ (void) scaleWithFactor:(float)ratio;
-+ (void) scaleWithFactor:(float)ratio  block:(void(^)())block;
++ (void)scaleWithFactor:(float)ratio;
++ (void)scaleWithFactor:(float)ratio block:(TimecopBlock)block;
 
-+ (void) finishTravel;
++ (void)finishTravel;
 
 @end

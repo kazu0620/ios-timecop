@@ -10,9 +10,9 @@
 
 @interface NSDate(SRGTimecop)
 
-+ (void) srg_travelWithDate:(NSDate *)date;
-+ (void) srg_freezeWithDate:(NSDate *)date;
-+ (void) srg_scaleWithFactor:(float)ratio;
-+ (void) srg_finishTravel;
++ (void)srg_travelWithDate:(NSDate *)date;
++ (void)srg_freezeWithDate:(NSDate *)date;
++ (void)srg_scaleWithFactor:(float)ratio;
++ (void)srg_finishTravel;
 
 @end
